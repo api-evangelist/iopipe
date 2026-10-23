@@ -1,25 +1,80 @@
 aid: iopipe
+
 name: IOpipe
-description: 'IOpipe is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.iopipe.com/static/img/iopipe_serverless_observability_og.png
+
+description: 'IOpipe provides real‑time observability for serverless applications on AWS Lambda. It offers detailed tracing, profiling, alerts, metrics, and logging to help developers monitor function performance, detect issues, and optimize costs. The platform integrates with existing CI/CD pipelines and supports custom dashboards, enabling teams to gain deep insights into their serverless workloads.'
+
 url: https://raw.githubusercontent.com/api-evangelist/iopipe/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Monitoring
+- Observability
+- Serverless
+- AWS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: Plans
+  url: plans/iopipe-plans-pricing.yml
+- type: Hosts
+  url: hosts/iopipe-hosts.yml
+- type: Vendors
+  url: vendors/iopipe-vendors.yml
+- type: SDKs
+  url: packages/iopipe-packages.yml
+- type: Packages
+  url: packages/iopipe-packages.yml
+- type: TermsOfService
+  url: https://www.iopipe.com/terms/
+- type: Security
+  url: https://www.iopipe.com/security/
+- type: PrivacyPolicy
+  url: https://www.iopipe.com/privacy/
+- type: Pricing
+  url: https://www.iopipe.com/pricing/
+- type: GitHubOrganization
+  url: https://github.com/iopipe/
+- type: DomainSecurity
+  url: security/iopipe-domain-security.yml
 - type: Website
   url: https://www.iopipe.com/
+- type: Documentation
+  url: https://www.iopipe.com/features/
+- type: Blog
+  url: http://read.iopipe.com
+- type: DeveloperPortal
+  url: https://hub.iopipe.com/en/collections/302941-iopipe-faq/
+- type: Login
+  url: https://dashboard.iopipe.com/login/
+
+apis: []
+
+x-backed-by:
+- nea
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

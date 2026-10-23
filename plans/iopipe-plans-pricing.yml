@@ -1,0 +1,45 @@
+generated: '2026-10-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.iopipe.com/pricing/
+sources:
+- https://www.iopipe.com/pricing/
+name: IOpipe pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Lite
+  price_text: FREE Forever
+  features:
+  - 5 team members
+  - 2 projects
+  - 1 million function invocations per month
+  - Unlimited traces
+  - 7 day data retention
+- name: Essential
+  price_text: $299 per month
+  price: 299
+  features:
+  - 10 team members
+  - 5 Projects
+  - 5 million function invocations per month
+  - Unlimited traces
+  - 30 day data retention
+- name: Pro
+  price_text: $749 per month
+  price: 749
+  features:
+  - 30 team members
+  - 20 Projects
+  - 20 million function invocations per month
+  - Unlimited traces
+  - 30 day data retention
+- name: Enterprise
+  price_text: Contact Us
+  features:
+  - Unlimited team members
+  - Unlimited projects
+  - Unlimited function invocations
+  - Unlimited traces
+  - Custom Data Retention
+docs: https://www.iopipe.com/pricing/

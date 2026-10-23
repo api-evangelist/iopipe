@@ -1,0 +1,23 @@
+generated: '2026-10-22'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io)
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (iopipe.com,
+  security/iopipe-domain-security.yml) or its accepted GitHub org.'
+packages:
+- name: iopipe
+  registry: npm
+  url: https://www.npmjs.com/package/iopipe
+  language: JavaScript
+  official: true
+  version: 1.6.0
+  published: '2018-02-22'
+  evidence: metadata names iopipe.com
+- name: iopipe
+  registry: pypi
+  url: https://pypi.org/project/iopipe/
+  language: Python
+  official: true
+  version: 1.10.2
+  published: '2019-10-04'
+  evidence: metadata names iopipe.com

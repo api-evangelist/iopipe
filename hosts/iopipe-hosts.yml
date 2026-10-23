@@ -1,0 +1,118 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 7
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - identity
+  - marketing
+  - other
+  - portal
+  - source
+  - status
+  - website
+hosts:
+- host: api.iopipe.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: iopipe.com
+  role: api
+  relation: own
+- host: dashboard.iopipe.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Login
+  serves: []
+  registrable_domain: iopipe.com
+  role: identity
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: hub.iopipe.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - DeveloperPortal
+  serves:
+  - cdn
+  vendor: cloudfront
+  registrable_domain: iopipe.com
+  role: portal
+  relation: own
+- host: iopipe.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: iopipe.com
+  role: other
+  relation: own
+- host: read.iopipe.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: iopipe.com
+  role: marketing
+  relation: own
+- host: status.iopipe.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: iopipe.com
+  role: status
+  relation: own
+- host: www.iopipe.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - Security
+  - PrivacyPolicy
+  - Pricing
+  - Website
+  - Documentation
+  serves:
+  - hosting
+  vendor: netlify
+  registrable_domain: iopipe.com
+  role: website
+  relation: own
